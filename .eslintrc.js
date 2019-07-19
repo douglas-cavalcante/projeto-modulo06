@@ -2,9 +2,11 @@ module.exports = {
   env: {
     es6: true
   },
-  extends: ['airbnb', 'prettier', 'prettier/react'],  globals: {
+  extends: ['airbnb', 'prettier', 'prettier/react'],
+  globals: {
     Atomics: "readonly",
-    SharedArrayBuffer: "readonly"
+    SharedArrayBuffer: "readonly",
+    __DEV__: 'readonly'
   },
   parser: "babel-eslint",
   parserOptions: {
